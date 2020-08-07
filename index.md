@@ -1,37 +1,63 @@
-## Welcome to GitHub Pages
+## 个人信息
 
-You can use the [editor on GitHub](https://github.com/Cherrymelon/CV/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+- 张锐/男/1994
+- 学历：本科-电子信息工程-湖北工业大学(2013-2017)
+- 期望职位：Python开发工程师
+- Github: [Cherrymelon](https://github.com/Cherrymelon)
+- Email:Cherrymelon@foxmail.com
+- 电话：19916948002
+- 工作经验:1年
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 技能
+- 熟悉Python，如文件I/O、多进程
+- 熟悉Numpy、Pandas、Sklearn
+- 熟悉操作系统、常用数据结构和算法
+- 熟悉Linux、Shell、Git、Maven
+- 熟悉MySQL，如事务、索引
+- 熟悉Django
+- 使用过分布式计算框架Dask
+- 了解Scipy、Scrapy
+- 了解OOP和常用设计模式，如单例模式、工厂模式、MVC模式
+- 了解Http、TCP/IP等网络协议
+- 了解Restful、RPC
+- 了解WEB安全问题，如XSS、CSRF、SQL注入
+- 了解Java，如集合、泛型、JVM,了解Spring Boot
+- 了解Docker、K8S、MongoDB、Neo4j、Redis 、Kafka
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## 工作经历
 
-# Header 1
-## Header 2
-### Header 3
+### 武汉解语科技有限公司-NLP算法工程师（2017.7-2018.10）
+负责NLP方向的开发工作，另外负责编写基于Dask的DAU、WAU、用户留存率等分布式计算和数据收集、标注、清洗
 
-- Bulleted
-- List
+#### SNS消息多标签分类(Tensorflow)
 
-1. Numbered
-2. List
+需求：针对社群运营者对不同广告的允许类型，提供类别可选的过滤功能
+负责算法选型及实现,采用了Bi-lstm+Attention+Word2vec，使用gensim训练经过清洗和预处理的语料构建词向量模型。对训练数据做广告特征的抽取，测试中正常消息label的f1 score：99%左右，广告label的f1 score：80%左右。最后使用Tensorflow-serving进行部署。
 
-**Bold** and _Italic_ and `Code` text
+#### 基于决策树的句式判别(Sklearn)
 
-[Link](url) and ![Image](src)
-```
+需求：配合QA识别句式
+负责算法实现和调参，使用句法依存分析+词性标注+正则+编码向量+决策树进行句式分类，测试集中f1 score：85%左右。
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### 法律判决文书分类(Tensorflow)
 
-### Jekyll Themes
+需求:把相似案例的判决文书推送给法官作为参考判例
+负责算法选型及实现，起初尝试Doc2vec和Paragraph2vec，发现效果不理想,正则提取双方陈述部分，视为pairwise问题，使用RankNet+CNN。
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Cherrymelon/CV/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## 其他项目
 
-### Support or Contact
+#### 基于 Springboot + Redis + Kafka +MySQL的秒杀系统
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+参照Github上的项目，实现了一个秒杀系统，组件全部部署在Docker中。使用乐观锁更新库存，Redis计数限流和缓存预热，Kafka异步消息队列,数据存放在MySQL中，利用MyBatis进行持久化管理。由于CPU性能限制，Jmeter测试TPS只从300提升到2400。
+
+## 关于我
+
+- 热爱编程，具有强烈的自我驱动力，对学习新技术有极大的热情
+- 自学能力较强，具备独立分析解决问题的能力，能够阅读专业内英语论文
+- 做事认真，有较强的责任感，乐于沟通
+
+## 致谢
+
+感谢您花时间阅读我的简历，期待有机会与您共事。
